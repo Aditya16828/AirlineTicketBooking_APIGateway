@@ -6,8 +6,8 @@ const {authenticateUser} = require('./middlewares/authenticateUser');
 
 const app = express();
 
-// const {PORT} = require('./config/serverConfig');
-const PORT = 3005;
+const {PORT} = require('./config/serverConfig');
+// const PORT = 3005;
 
 const limiter = rateLimit({
     windowMs: 2*60*1000,
